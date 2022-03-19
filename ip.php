@@ -81,7 +81,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl, CURLOPT_PROXY, $ipnya);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_NOSIGNAL, 1);
-    curl_setopt($curl, CURLOPT_TIMEOUT_MS, 10000);
+    curl_setopt($curl, CURLOPT_TIMEOUT_MS, 20000);
 
 $resp = curl_exec($curl);
 curl_close($curl);
